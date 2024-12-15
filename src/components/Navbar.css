@@ -1,0 +1,96 @@
+.dashboard-navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list li {
+  margin-right: 20px;
+  position: relative; /* Untuk dropdown */
+}
+
+.navbar-list a, 
+.navbar-list .dropdown-toggle {
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: 500;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 8px;
+}
+
+.navbar-list a:hover, 
+.navbar-list .dropdown-toggle:hover {
+  color: #fff;
+  background-color: #4a90e2;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+  transform: scale(1.05);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Tombol Logout */
+.navbar-logout {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  transform: scale(1.1);
+}
+
+.logout-btn:focus {
+  outline: none;
+}

@@ -1,0 +1,105 @@
+.mata-pelajaran-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .mata-pelajaran-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #004a6f;
+    color: white;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .website-name {
+    font-size: 24px;
+  }
+  
+  .content-section {
+    padding: 40px;
+  }
+  
+  .content-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .mata-pelajaran-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .mata-pelajaran-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  .mata-pelajaran-item h3 {
+    color: #004a6f;
+    margin-top: 10px;
+  }
+  
+  .mata-pelajaran-item p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .mata-pelajaran-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .mata-pelajaran-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .mata-pelajaran-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .mata-pelajaran-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .mata-pelajaran-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  .mata-pelajaran-item:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  
+  .mata-pelajaran-item:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  

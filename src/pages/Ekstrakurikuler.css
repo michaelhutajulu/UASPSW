@@ -1,0 +1,39 @@
+.ekstrakurikuler-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .ekstrakurikuler-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease;
+  }
+  
+  .ekstrakurikuler-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ekstrakurikuler-item h3 {
+    color: #004a6f;
+    margin-bottom: 10px;
+  }
+  
+  .ekstrakurikuler-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

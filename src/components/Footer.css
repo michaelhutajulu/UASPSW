@@ -1,0 +1,21 @@
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Memberikan jarak antara footer dan konten di atasnya */
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content p:first-child {
+    font-size: 14px;
+  }
+  
+  .footer-content p:last-child {
+    font-size: 12px;
+    font-style: italic;
+  }
+  
